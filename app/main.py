@@ -31,3 +31,4 @@ email = input("What is the union member's email address? ")
 home_address = input("What is the union member's mailing address? ")
 primary_beneficiary = input("Who is the union member's primary beneficiary: ")
 contingent = input("Who is the contingent beneficiary ")
+# folder = "C:\Users\ianbt\Desktop\Appts"
