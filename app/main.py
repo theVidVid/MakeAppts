@@ -21,3 +21,13 @@ Information needed:
 After info is submitted, program will store info as a .txt file in a directory
 labeled APPOINTMENTS. 
 """
+print("Welcome to Appointment Maker!")
+date = input("Please enter a date for appointment: ")
+time = input("What time is the appointment? ")
+union_member = input("What is the name of the union member? ")
+birthdate = input("What is the union member's date of birth: mm/dd/yy ")
+telephone = input("What is the union member's primary telephone# ")
+email = input("What is the union member's email address? ")
+home_address = input("What is the union member's mailing address? ")
+primary_beneficiary = input("Who is the union member's primary beneficiary: ")
+contingent = input("Who is the contingent beneficiary ")
