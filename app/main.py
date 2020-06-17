@@ -16,7 +16,7 @@ Information needed:
 9. A section for any additional notes.
 10. Date of Appointment
 11. Time of Appointment
-12. Name of file.\n
+12. Name of file.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 After info is submitted, program will store info as a .txt file in a directory
 labeled APPOINTMENTS. 
