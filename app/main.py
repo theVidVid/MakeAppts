@@ -21,6 +21,8 @@ Information needed:
 After info is submitted, program will store info as a .txt file in a directory
 labeled APPOINTMENTS. 
 """
+print("Welcome to Appointment Maker!")
+print("======================================================================")
 date = input(
     "What is the date of the appointment? eg(weekday-day.txt): ")
 time = input("What time is the appointment: eg(12PM) ")
@@ -34,9 +36,9 @@ home_address = input("What is the union member's mailing address? ")
 primary_beneficiary = input("Who is the union member's primary beneficiary? ")
 contingent = input("Who is the contingent beneficiary? ")
 child_safe_kit = input("How many Child Safe Kits were ordered? ")
-# folder = "C:\Users\ianbt\Desktop\Appts"
 
-with open(date, "w") as f_obj:
+filename = f"/home/thevidvid/Desktop/Appts/{date}"
+with open(filename, "w") as f_obj:
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write(f"Time: {time}\n")

@@ -14,9 +14,8 @@ home_address = input("What is the union member's mailing address? ")
 primary_beneficiary = input("Who is the union member's primary beneficiary? ")
 contingent = input("Who is the contingent beneficiary? ")
 child_safe_kit = input("How many Child Safe Kits were ordered? ")
-# folder = "C:\Users\ianbt\Desktop\Appts"
 
-filename = date
+filename = f"/home/thevidvid/Desktop/Appts/{date}"
 with open(filename, "a") as f_obj:
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write(f"Time: {time}\n")
