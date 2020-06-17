@@ -1,14 +1,17 @@
 print("Welcome to Appointment Maker!")
 print("======================================================================")
 date = input(
-    "What is the date of the appointment you're adding to?" 
-    "eg(weekday-day.txt): ")
+    "What is the date of the appointment you're adding to? "
+    "eg(weekday-day.txt): " 
+)
 time = input("What time is the appointment: eg(12PM) ")
 union_member = input("What is the name of the union member? ")
 union_name = input("What is the name of the union? ")
 birthdate = input("What is the union member's date of birth? mm-dd-yy ")
 telephone = input(
-    "What is the union member's primary telephone? eg(111-222-3333) ")
+    "What is the union member's primary telephone? "
+    "eg(111-222-3333) "
+)
 email = input("What is the union member's email address? ")
 home_address = input("What is the union member's mailing address? ")
 primary_beneficiary = input("Who is the union member's primary beneficiary? ")
@@ -16,7 +19,8 @@ contingent = input("Who is the contingent beneficiary? ")
 child_safe_kit = input("How many Child Safe Kits were ordered? ")
 # folder = "C:\Users\ianbt\Desktop\Appts"
 
-filename = date
+filename = f"{date}"
+
 with open(filename, "a") as f_obj:
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write(f"Time: {time}\n")
