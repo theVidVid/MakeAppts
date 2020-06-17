@@ -22,7 +22,8 @@ After info is submitted, program will store info as a .txt file in a directory
 labeled APPOINTMENTS. 
 """
 print("Welcome to Appointment Maker!")
-date = input("Please enter a date for appointment: ")
+print("======================================================================")
+date = input("Please enter a date for appointment eg(weekday-day.txt): ")
 time = input("What time is the appointment? ")
 union_member = input("What is the name of the union member? ")
 birthdate = input("What is the union member's date of birth: mm/dd/yy ")
@@ -32,3 +33,14 @@ home_address = input("What is the union member's mailing address? ")
 primary_beneficiary = input("Who is the union member's primary beneficiary: ")
 contingent = input("Who is the contingent beneficiary ")
 # folder = "C:\Users\ianbt\Desktop\Appts"
+
+filename = date
+with open(filename, "w") as f_obj:
+    f_obj.write(f"Time: {time}\n")
+    f_obj.write(f"Name: {union_member}\n")
+    f_obj.write(f"Date of Birth: {birthdate}\n")
+    f_obj.write(f"Telephone: {telephone}\n")
+    f_obj.write(f"Email: {email}\n")
+    f_obj.write(f"Address: {home_address}\n")
+    f_obj.write(f"Beneficiary: {primary_beneficiary}\n")
+    f_obj.write(f"Contingent Beneficiary: {contingent}\n")
