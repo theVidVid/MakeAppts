@@ -1,5 +1,5 @@
+# Information needed
 
-Information needed:
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Name of Union Member
@@ -14,7 +14,5 @@ Information needed:
 10. Date of Appointment
 11. Time of Appointment
 12. Name of file.
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 After info is submitted, program will store info as a .txt file in a directory
 labeled APPOINTMENTS.
-"""
