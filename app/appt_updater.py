@@ -1,3 +1,5 @@
+from pathlib import Path
+
 print("Welcome to Appointment Maker!")
 print("======================================================================")
 date = input(
@@ -18,9 +20,9 @@ primary_beneficiary = input("Who is the union member's primary beneficiary? ")
 contingent = input("Who is the contingent beneficiary? ")
 child_safe_kit = input("How many Child Safe Kits were ordered? ")
 
+filepath = Path("/mnt/c/Users/ianbt/desktop/Appts")
 filename = f"{date}"
-
-with open(filename, "a") as f_obj:
+with open(filepath/filename, "a") as f_obj:
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write(f"Time: {time}\n")
     f_obj.write(f"Name: {union_member}\n")

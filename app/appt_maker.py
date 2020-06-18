@@ -21,6 +21,8 @@ Information needed:
 After info is submitted, program will store info as a .txt file in a directory
 labeled APPOINTMENTS. 
 """
+from pathlib import Path
+
 date = input("What is the date of the appointment? eg(weekday-day.txt): ")
 time = input("What time is the appointment? eg(12PM): ")
 union_member = input("What is the name of the union member? ")
@@ -36,9 +38,9 @@ primary_beneficiary = input("Who is the union member's primary beneficiary? ")
 contingent = input("Who is the contingent beneficiary? ")
 child_safe_kit = input("How many Child Safe Kits were ordered? ")
 
+filepath = Path("/mnt/c/Users/ianbt/desktop/Appts")
 filename = f"{date}"
-
-with open(filename, "w") as f_obj:
+with open(filepath/filename, 'w') as f_obj:
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write("----------------------------------------------------------\n")
     f_obj.write(f"Time: {time}\n")
