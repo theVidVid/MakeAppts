@@ -23,8 +23,11 @@ labeled APPOINTMENTS.
 """
 from pathlib import Path
 import os
+
 print("Welcome to Appointment Maker!")
-print("===============================================================================================================")
+print(
+    "==============================================================================================================="
+)
 date = input("What is the date of the appointment? eg(weekday-day.txt): ")
 time = input("What time is the appointment? eg(12PM): ")
 union_member = input("What is the name of the union member? ")
@@ -55,8 +58,12 @@ else:
     )
 filename = f"{date}"
 with open(filepath / filename, "w") as f_obj:
-    f_obj.write("---------------------------------------------------------------------------------------------------\n")
-    f_obj.write("---------------------------------------------------------------------------------------------------\n")
+    f_obj.write(
+        "---------------------------------------------------------------------------------------------------\n"
+    )
+    f_obj.write(
+        "---------------------------------------------------------------------------------------------------\n"
+    )
     f_obj.write(f"Time: {time}\n")
     f_obj.write(f"Name: {union_member}\n")
     f_obj.write(f"Union Name: {union_name}\n")
@@ -67,4 +74,6 @@ with open(filepath / filename, "w") as f_obj:
     f_obj.write(f"Primary Beneficiary: {primary_beneficiary}\n")
     f_obj.write(f"Contingent Beneficiary: {contingent}\n")
     f_obj.write(f"Child Safe Kits: {child_safe_kit}\n")
-    f_obj.write("---------------------------------------------------------------------------------------------------\n")
+    f_obj.write(
+        "---------------------------------------------------------------------------------------------------\n"
+    )
