@@ -6,7 +6,7 @@ Automate the inputting of appointment data all into one easy to use script.
 Information needed:
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 1. Name of Union Member
-2. Name of Union 
+2. Name of Union
 3. Date of Birth
 4. Telephone, H=Home, C=Cellphone
 5. Email Address, Must contain valid name@emailservice.com format
@@ -19,7 +19,7 @@ Information needed:
 12. Name of file.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 After info is submitted, program will store info as a .txt file in a directory
-labeled APPOINTMENTS. 
+labeled APPOINTMENTS.
 """
 from pathlib import Path
 import os
@@ -31,7 +31,7 @@ time = input("What time is the appointment? eg(12PM): ")
 union_member = input("What is the name of the union member? ")
 union_name = input("What is the name of the union? ")
 birthdate = input("What is the union member's date of birth? mm-dd-yy ")
-telephone = input("What is the union member's primary telephone? " 
+telephone = input("What is the union member's primary telephone? "
                   "eg(111-222-3333): ")
 email = input("What is the union member's email address? ")
 home_address = input("What is the union member's mailing address? ")
