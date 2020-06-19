@@ -7,7 +7,7 @@ Checks the existence of either the Windows10 or Linux filepath.
 from pathlib import Path
 import os
 
-print("Welcome to Appointment Maker!")
+print("-------------------Welcome to Appointment Maker!----------------------")
 print("======================================================================")
 date = input(
     "What is the date of the appointment you're adding to? "
@@ -17,11 +17,10 @@ time = input("What time is the appointment: eg(12PM) ")
 union_member = input("What is the name of the union member? ")
 union_name = input("What is the name of the union? ")
 birthdate = input("What is the union member's date of birth? mm-dd-yy ")
-telephone = input("What is the union member's primary telephone? "
-                  "eg(111-222-3333) ")
+telephone = input("What is the union member's telephone? eg(111-222-3333) ")
 email = input("What is the union member's email address? ")
 home_address = input("What is the union member's mailing address? ")
-primary_beneficiary = input("Who is the union member's primary beneficiary? ")
+primary_beneficiary = input("Who is the primary beneficiary? ")
 contingent = input("Who is the contingent beneficiary? ")
 child_safe_kit = input("How many Child Safe Kits were ordered? ")
 
@@ -41,7 +40,7 @@ elif os.access(linux_path, os.F_OK):
 else:
     print(
         "Error: No matching directory found. "
-        "Please create an Appts directory in your desktop."
+        "Please create an 'Appts' directory in your desktop."
     )
 filename = f"{date}"
 with open(filepath / filename, "a") as f_obj:
